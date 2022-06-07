@@ -1,0 +1,36 @@
+
+
+
+
+# создание объявления
+POST http://127.0.0.1:5000/announce/
+Content-Type: application/json
+
+{
+  "title": "Заголовок",
+  "description": "Описание",
+  "user": 1
+}
+
+###
+
+# получение объявления
+GET http://127.0.0.1:5000/announce/1
+Content-Type: application/json
+
+###
+
+# обновление объявления
+PATCH http://127.0.0.1:5000/announce/3
+Content-Type: application/json
+
+{
+  "title": "Продам гараж",
+  "description": "Большой, красивый"
+}
+
+###
+
+# удаление объявления
+DELETE http://127.0.0.1:5000/announce/4
+Content-Type: application/json

@@ -1,0 +1,5 @@
+flask~=2.1.2
+sqlalchemy~=1.4.37
+psycopg2
+requests~=2.27.1
+pydantic

@@ -10,7 +10,7 @@ from sqlalchemy.orm import sessionmaker
 import pydantic
 
 app = Flask('app')
-PG_DSN = 'postgresql://admin:admin@127.0.0.1:5001/flask_db'
+PG_DSN = 'postgresql://admin:admin@127.0.0.1/flask_db'
 db_engine = create_engine(PG_DSN)
 Base = declarative_base()
 Session = sessionmaker(bind=db_engine)
